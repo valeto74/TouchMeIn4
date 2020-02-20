@@ -53,7 +53,8 @@ class LoginViewController: UIViewController {
   @IBOutlet weak var usernameTextField: UITextField!
   @IBOutlet weak var passwordTextField: UITextField!
   @IBOutlet weak var createInfoLabel: UILabel!  
-
+    @IBOutlet weak var touchIDButton: UIButton!
+    
   // MARK: - View Life Cycle
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -80,7 +81,11 @@ class LoginViewController: UIViewController {
     
   }
   
-  override var preferredStatusBarStyle: UIStatusBarStyle {
+    @IBAction func touchIDLoginAction(_ sender: Any) {
+    }
+    
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
     return .lightContent
   }
 }

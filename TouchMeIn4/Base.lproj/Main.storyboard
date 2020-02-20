@@ -129,7 +129,7 @@
                     <navigationItem key="navigationItem" title="All Notes" id="VKx-0t-mqp"/>
                     <connections>
                         <outlet property="tableView" destination="w7V-Tq-fm6" id="Tya-CR-ecw"/>
-                        <segue destination="glm-1q-XSS" kind="presentation" identifier="loginView" id="YTi-5x-rqF"/>
+                        <segue destination="glm-1q-XSS" kind="show" identifier="loginView" id="YTi-5x-rqF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W14-Yt-TVr" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -141,11 +141,11 @@
             <objects>
                 <viewController id="glm-1q-XSS" customClass="LoginViewController" customModule="TouchMeIn" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ABb-3i-8hU">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="eyn-br-LqP">
-                                <rect key="frame" x="0.0" y="20" width="375" height="258.5"/>
+                                <rect key="frame" x="0.0" y="116" width="375" height="334.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vJ7-Wh-cd1">
                                         <rect key="frame" x="112" y="0.0" width="151.5" height="79.5"/>
@@ -183,6 +183,17 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E3F-wv-jzs">
+                                        <rect key="frame" x="154.5" y="267.5" width="66" height="67"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="66" id="C7a-RF-ZTV"/>
+                                            <constraint firstAttribute="height" constant="67" id="pNb-dz-HxL"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="Touch-icon-lg"/>
+                                        <connections>
+                                            <action selector="touchIDLoginAction:" destination="glm-1q-XSS" eventType="touchUpInside" id="gP6-Q1-SBl"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -195,10 +206,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="AiG-m7-fVK"/>
                     </view>
+                    <navigationItem key="navigationItem" id="juf-sU-T9o"/>
                     <connections>
                         <outlet property="createInfoLabel" destination="N89-S8-6tO" id="NWJ-Bk-T4o"/>
                         <outlet property="loginButton" destination="eRr-Oj-5kq" id="eDk-HU-Qlg"/>
                         <outlet property="passwordTextField" destination="gcl-FI-3Ka" id="E9K-za-QiZ"/>
+                        <outlet property="touchIDButton" destination="E3F-wv-jzs" id="IIY-dE-f0K"/>
                         <outlet property="usernameTextField" destination="IsR-6S-Bxn" id="xN1-mc-B3L"/>
                         <segue destination="hcN-Fr-4gx" kind="unwind" identifier="dismissLogin" unwindAction="unwindSegue:" id="9yC-9I-JnV"/>
                     </connections>
@@ -211,5 +224,6 @@
     </scenes>
     <resources>
         <image name="Button" width="131" height="53.5"/>
+        <image name="Touch-icon-lg" width="138" height="137.5"/>
     </resources>
 </document>
