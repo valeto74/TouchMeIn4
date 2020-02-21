@@ -15,6 +15,7 @@
 		2A1F59C61FA4E3D300986808 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A1F59C51FA4E3D300986808 /* Assets.xcassets */; };
 		2A1F59C91FA4E3D300986808 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A1F59C71FA4E3D300986808 /* LaunchScreen.storyboard */; };
 		2A1F59D61FA4E47600986808 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1F59D31FA4E47500986808 /* LoginViewController.swift */; };
+		8B9E4D7B23FF549A009A60F8 /* TouchIDAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9E4D7A23FF549A009A60F8 /* TouchIDAuthentication.swift */; };
 		8BC3620723CD4BDA003090AE /* KeychainPasswordItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC3620623CD4BDA003090AE /* KeychainPasswordItem.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		2A1F59C81FA4E3D300986808 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2A1F59CA1FA4E3D300986808 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A1F59D31FA4E47500986808 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8B9E4D7A23FF549A009A60F8 /* TouchIDAuthentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchIDAuthentication.swift; sourceTree = "<group>"; };
 		8BC3620623CD4BDA003090AE /* KeychainPasswordItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeychainPasswordItem.swift; path = Resources/KeychainPasswordItem.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -74,6 +76,7 @@
 				2A1F59C71FA4E3D300986808 /* LaunchScreen.storyboard */,
 				2A1F59CA1FA4E3D300986808 /* Info.plist */,
 				2A1F59BB1FA4E3D300986808 /* TouchMeIn4.xcdatamodeld */,
+				8B9E4D7A23FF549A009A60F8 /* TouchIDAuthentication.swift */,
 			);
 			path = TouchMeIn4;
 			sourceTree = "<group>";
@@ -156,6 +159,7 @@
 				2A1F59BF1FA4E3D300986808 /* MasterViewController.swift in Sources */,
 				2A1F59C11FA4E3D300986808 /* DetailViewController.swift in Sources */,
 				8BC3620723CD4BDA003090AE /* KeychainPasswordItem.swift in Sources */,
+				8B9E4D7B23FF549A009A60F8 /* TouchIDAuthentication.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

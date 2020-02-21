@@ -43,6 +43,7 @@ class LoginViewController: UIViewController {
   var passwordItems: [KeychainPasswordItem] = []
   let createLoginButtonTag = 0
   let loginButtonTag = 1
+  let touchMe = BiometricIDAuth()
 
   @IBOutlet weak var loginButton: UIButton!
   
@@ -53,7 +54,7 @@ class LoginViewController: UIViewController {
   @IBOutlet weak var usernameTextField: UITextField!
   @IBOutlet weak var passwordTextField: UITextField!
   @IBOutlet weak var createInfoLabel: UILabel!  
-    @IBOutlet weak var touchIDButton: UIButton!
+  @IBOutlet weak var touchIDButton: UIButton!
     
   // MARK: - View Life Cycle
   override func viewDidLoad() {
@@ -78,10 +79,12 @@ class LoginViewController: UIViewController {
       usernameTextField.text = storedUsername
     }
 
-    
+    touchIDButton.isHidden = !touchMe.canEvaluatePolicy()
+
   }
   
     @IBAction func touchIDLoginAction(_ sender: Any) {
+      
     }
     
     

@@ -145,7 +145,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="eyn-br-LqP">
-                                <rect key="frame" x="0.0" y="116" width="375" height="334.5"/>
+                                <rect key="frame" x="0.0" y="116" width="375" height="388"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vJ7-Wh-cd1">
                                         <rect key="frame" x="112" y="0.0" width="151.5" height="79.5"/>
@@ -169,7 +169,7 @@
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eRr-Oj-5kq">
-                                        <rect key="frame" x="122" y="172.5" width="131" height="53.500000000000014"/>
+                                        <rect key="frame" x="56.5" y="172.5" width="262" height="107"/>
                                         <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="25"/>
                                         <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Login" backgroundImage="Button"/>
@@ -178,13 +178,13 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start by creating a username and password" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="N89-S8-6tO">
-                                        <rect key="frame" x="22.5" y="235" width="330" height="23.5"/>
+                                        <rect key="frame" x="22.5" y="288.5" width="330" height="23.5"/>
                                         <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="17"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E3F-wv-jzs">
-                                        <rect key="frame" x="154.5" y="267.5" width="66" height="67"/>
+                                        <rect key="frame" x="154.5" y="321" width="66" height="67"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="66" id="C7a-RF-ZTV"/>
                                             <constraint firstAttribute="height" constant="67" id="pNb-dz-HxL"/>
